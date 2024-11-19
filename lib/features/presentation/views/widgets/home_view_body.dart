@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:gdg_task_ui/features/presentation/views/widgets/custom_row_button.dart';
 import 'package:gdg_task_ui/features/presentation/views/widgets/custom_search_widget.dart';
 import 'package:gdg_task_ui/features/presentation/views/widgets/home_view_app_bar.dart';
 class HomeViewBody extends StatelessWidget {
@@ -6,11 +8,13 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView(
+    return  SingleChildScrollView(
       child: Column(
         children: [
-HomeViewAppBar(),
-          CustomSearchWidget(),
+          const HomeViewAppBar(),
+          const CustomSearchWidget(),
+          SizedBox(height: 12.h,),
+          const CustomRowButton()
         ],
       ),
     );
