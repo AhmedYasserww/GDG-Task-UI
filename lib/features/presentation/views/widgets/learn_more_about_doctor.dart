@@ -11,7 +11,6 @@ class LearnMoreAboutDoctor extends StatelessWidget {
         borderRadius: BorderRadius.circular(16.r),
         color: const Color(0xffE8F3F1),
       ),
-      margin: EdgeInsets.symmetric(horizontal: 20.w),
       child: Row(
         children: [
           SizedBox(width: 26.w,),
